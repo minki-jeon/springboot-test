@@ -52,7 +52,7 @@
 	    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
 	      <!-- Uncomment the line below if you also wish to use an image logo -->
 	      <!-- <img src="img/logo.png" alt=""> -->
-	      <h1 class="sitename">Alex Smith</h1>
+	      <h1 class="sitename">TEST</h1>
 	    </a>
 	
 	    <div class="social-links text-center">
@@ -70,21 +70,52 @@
 	        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
 	        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
 	        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-	        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+	        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Test Menu</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
 	          <ul>
-	            <li><a href="#">Dropdown 1</a></li>
-	            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+	            <li class="dropdown"><a href="#"><span>Test1. Maple API</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
 	              <ul>
-	                <li><a href="#">Deep Dropdown 1</a></li>
+	                <li><a href="#">1. 캐릭터 조회</a></li>
 	                <li><a href="#">Deep Dropdown 2</a></li>
 	                <li><a href="#">Deep Dropdown 3</a></li>
 	                <li><a href="#">Deep Dropdown 4</a></li>
 	                <li><a href="#">Deep Dropdown 5</a></li>
 	              </ul>
 	            </li>
-	            <li><a href="#">Dropdown 2</a></li>
-	            <li><a href="#">Dropdown 3</a></li>
-	            <li><a href="#">Dropdown 4</a></li>
+	            
+	            <li class="dropdown"><a href="#"><span>Test2. Maple M API</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+	              <ul>
+	                <li><a href="#">1. 캐릭터 조회</a></li>
+	                <li><a href="#">Deep Dropdown 2</a></li>
+	                <li><a href="#">Deep Dropdown 3</a></li>
+	                <li><a href="#">Deep Dropdown 4</a></li>
+	                <li><a href="#">Deep Dropdown 5</a></li>
+	              </ul>
+	            </li>
+	            
+	            <li class="dropdown"><a href="#"><span>Test3. Public-Data API</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+	              <ul>
+	                <li><a href="#">1. 부천 7호선 전철 이용객</a></li>
+	                <li><a href="#">Deep Dropdown 2</a></li>
+	                <li><a href="#">Deep Dropdown 3</a></li>
+	                <li><a href="#">Deep Dropdown 4</a></li>
+	                <li><a href="#">Deep Dropdown 5</a></li>
+	              </ul>
+	            </li>
+	            
+<!-- 	            <li><a href="#">Dropdown 1</a></li> -->
+<!-- 	            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a> -->
+<!-- 	              <ul> -->
+<!-- 	                <li><a href="#">Deep Dropdown 1</a></li> -->
+<!-- 	                <li><a href="#">Deep Dropdown 2</a></li> -->
+<!-- 	                <li><a href="#">Deep Dropdown 3</a></li> -->
+<!-- 	                <li><a href="#">Deep Dropdown 4</a></li> -->
+<!-- 	                <li><a href="#">Deep Dropdown 5</a></li> -->
+<!-- 	              </ul> -->
+<!-- 	            </li> -->
+<!-- 	            <li><a href="#">Dropdown 2</a></li> -->
+<!-- 	            <li><a href="#">Dropdown 3</a></li> -->
+<!-- 	            <li><a href="#">Dropdown 4</a></li> -->
+	            
 	          </ul>
 	        </li>
 	        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
@@ -101,8 +132,9 @@
 	      <img src="img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
 	
 	      <div class="container" data-aos="fade-up" data-aos-delay="100">
-	        <h2>Alex Smith</h2>
-	        <p>I'm <span class="typed" data-typed-items="${HELLO}, Designer, Developer, Freelancer, Photographer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+	        <h2>Main Page For Test</h2>
+<%-- 	    <p>I'm <span class="typed" data-typed-items="${HELLO}, Designer, Developer, Freelancer, Photographer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p> --%>
+	        <p>I like <span class="typed" data-typed-items="Play the Games, See the Media, Listen to Music">Play the Games</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>	
 	      </div>
 	
 	    </section><!-- /Hero Section -->
