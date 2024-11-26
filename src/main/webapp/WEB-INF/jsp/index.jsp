@@ -72,9 +72,9 @@
 	        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
 	        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Test Menu</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
 	          <ul>
-	            <li class="dropdown"><a href="#"><span>Test1. Maple API</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+	            <li class="dropdown"><a href="/testMaple.do"><span>Test1. Maple API</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
 	              <ul>
-	                <li><a href="#">1. 캐릭터 조회</a></li>
+	                <li><a href="/testMaple.do#search">1. 캐릭터 조회</a></li>
 	                <li><a href="#">Deep Dropdown 2</a></li>
 	                <li><a href="#">Deep Dropdown 3</a></li>
 	                <li><a href="#">Deep Dropdown 4</a></li>

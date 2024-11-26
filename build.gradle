@@ -24,10 +24,10 @@ dependencies {
 	
 	implementation "org.apache.tomcat.embed:tomcat-embed-jasper"
 	//implementation 'javax.servlet:jstl' //스프링부트 3.0 미만
-   implementation 'jakarta.servlet:jakarta.servlet-api' //스프링부트 3.0 이상
-   implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api' //스프링부트 3.0 이상
-   implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl' //스프링부트 3.0 이상
-   developmentOnly 'org.springframework.boot:spring-boot-devtools'	// 서버 재가동없이 소스 반영을 위한 도구
+    implementation 'jakarta.servlet:jakarta.servlet-api' //스프링부트 3.0 이상
+    implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api' //스프링부트 3.0 이상
+    implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl' //스프링부트 3.0 이상
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'	// 서버 재가동없이 소스 반영을 위한 도구
 }
 
 tasks.named('test') {
