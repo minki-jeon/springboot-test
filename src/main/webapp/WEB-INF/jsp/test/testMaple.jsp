@@ -8,90 +8,152 @@
 <%@include file="../include/template_navmenu.jsp" %>
 
 	  <main class="main">
+
+	    <!-- Page Title -->
+	    <div class="page-title dark-background">
+	      <div class="container d-lg-flex justify-content-between align-items-center">
+	        <h1 class="mb-2 mb-lg-0">메이플 캐릭터 조회</h1>
+	        <nav class="breadcrumbs">
+	          <ol>
+	            <li><a href="/#hero">Home</a></li>
+	            <li><a href="#">Test Menu</a></li>
+	            <li><a href="#">Test1.Maple API</a></li>
+	            <li class="current">1.캐릭터 조회</li>
+	          </ol>
+	        </nav>
+	      </div>
+	    </div><!-- End Page Title -->
+		  
 	
 	    <!-- Resume Section -->
-	    <section id="resume" class="resume section">
+	    <section id="contact" class="contact section">
 	
 	      <!-- Section Title -->
 	      <div class="container section-title" data-aos="fade-up">
 	        <h2>메이플 캐릭터 조회</h2>
-<!-- 	        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
-
-				<p>TODO 1. 좌측메뉴를 공통 파일로 생성</p>
-
-				<p>TODO 2. 메이플 캐릭터 조회를 위한 캐릭터명 Input Form 생성</p>
+	        <p>메이플스토리에 생성된 캐릭터 이름을 입력하시면 해당 캐릭터에 대한 정보가 조회됩니다.</p>
 
 
 	      </div><!-- End Section Title -->
+ 
+	      <div class="container" data-aos="fade-up" data-aos-delay="100">
+	
+	        <div class="row gy-4">
+	
+	          <div class="col-lg-5">
+	            
+	            <form action="/getCharacter" id="nameForm" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+	              <div class="row gy-4">
+	
+	                <label for="name-field" class="pb-2">캐릭터명 입력</label>
+	                <div class="col-md-6">
+	                  <input type="text" name="name" id="chName" class="form-control" required="">
+	                </div>
+	                <div class="col-md-6">
+	                  <a href="#" onclick="getCharacter()"><button type="submit">조회하기</button></a>
+	                </div>
+	
+	              </div>
+	            </form>
+	            
+	          </div>
+	
+	        </div>
+	
+	      </div>
+	    </section><!-- /Resume Section -->
+
+	    <!-- Service Details Section -->
+	    <section id="service-details" class="service-details portfolio-details section">
 	
 	      <div class="container">
 	
-	        <div class="row">
+	        <div class="row gy-4">
 	
-	          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-<!-- 	            <h3 class="resume-title">Sumary</h3> -->
+	          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+	          
+	            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+	              <h3>캐릭터 정보</h3>
+	              <ul>
+	                <li><strong>캐릭터명</strong>: Web design</li>
+	                <li><strong>레벨</strong>: ASU Company</li>
+	                <li><strong>전투력</strong>: 01 March, 2020</li>
+	              </ul>
+	            </div>
+	            
+	            <div class="services-list" data-aos="fade-up" data-aos-delay="200">
+	              <a href="#" class="active">장착 장비</a>
+	              <a href="#">V 매트릭스 / 헥사 스킬</a>
+	              <a href="#">유니온 정보</a>
+<!-- 	              <a href="#">Graphic Design</a> -->
+<!-- 	              <a href="#">Marketing</a> -->
+	            </div>
 	
-<!-- 	            <div class="resume-item pb-0"> -->
-<!-- 	              <h4>Brandon Johnson</h4> -->
-<!-- 	              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p> -->
-<!-- 	              <ul> -->
-<!-- 	                <li>Portland par 127,Orlando, FL</li> -->
-<!-- 	                <li>(123) 456-7891</li> -->
-<!-- 	                <li>alice.barkley@example.com</li> -->
-<!-- 	              </ul> -->
-<!-- 	            </div>Edn Resume Item -->
-	
-<!-- 	            <h3 class="resume-title">Education</h3> -->
-<!-- 	            <div class="resume-item"> -->
-<!-- 	              <h4>Master of Fine Arts &amp; Graphic Design</h4> -->
-<!-- 	              <h5>2015 - 2016</h5> -->
-<!-- 	              <p><em>Rochester Institute of Technology, Rochester, NY</em></p> -->
-<!-- 	              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p> -->
-<!-- 	            </div>Edn Resume Item -->
-	
-<!-- 	            <div class="resume-item"> -->
-<!-- 	              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4> -->
-<!-- 	              <h5>2010 - 2014</h5> -->
-<!-- 	              <p><em>Rochester Institute of Technology, Rochester, NY</em></p> -->
-<!-- 	              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p> -->
-<!-- 	            </div>Edn Resume Item -->
-	
+	            <h4>Enim qui eos rerum in delectus</h4>
+	            <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p>
 	          </div>
 	
-	          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-<!-- 	            <h3 class="resume-title">Professional Experience</h3> -->
-<!-- 	            <div class="resume-item"> -->
-<!-- 	              <h4>Senior graphic design specialist</h4> -->
-<!-- 	              <h5>2019 - Present</h5> -->
-<!-- 	              <p><em>Experion, New York, NY </em></p> -->
-<!-- 	              <ul> -->
-<!-- 	                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li> -->
-<!-- 	                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li> -->
-<!-- 	                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li> -->
-<!-- 	                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li> -->
-<!-- 	              </ul> -->
-<!-- 	            </div>Edn Resume Item -->
-	
-<!-- 	            <div class="resume-item"> -->
-<!-- 	              <h4>Graphic design specialist</h4> -->
-<!-- 	              <h5>2017 - 2018</h5> -->
-<!-- 	              <p><em>Stepping Stone Advertising, New York, NY</em></p> -->
-<!-- 	              <ul> -->
-<!-- 	                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li> -->
-<!-- 	                <li>Managed up to 5 projects or tasks at a given time while under pressure</li> -->
-<!-- 	                <li>Recommended and consulted with clients on the most appropriate graphic design</li> -->
-<!-- 	                <li>Created 4+ design presentations and proposals a month for clients and account managers</li> -->
-<!-- 	              </ul> -->
-<!-- 	            </div>Edn Resume Item -->
-	
+	          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+	            <img src="img/services.jpg" alt="" class="img-fluid services-img">
+	            <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
+	            <p>
+	              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
+	            </p>
+	            <ul>
+	              <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
+	              <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
+	              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
+	            </ul>
+	            <p>
+	              Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.
+	            </p>
+	            <p>
+	              Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum. Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.
+	            </p>
 	          </div>
 	
 	        </div>
 	
 	      </div>
 	
-	    </section><!-- /Resume Section -->
-	
+	    </section><!-- /Service Details Section -->
+		    
 	  </main>
+	  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+
+function getCharacter() {
+	var chName = nameForm.chName.value; 
+	console.log(chName);
+
+	
+	$.ajax({
+		
+		url : "/getCharacter",
+		type : "GET",
+		async: false,
+// 		dataType : "json",
+		data : {"name":chName},
+		
+		success: function(data){
+			
+// 			returnObject = data;
+			console.log("success : " + data);
+			
+		},
+	
+		complete : function(data) {
+			console.log("complete : " + data);
+		},
+		
+		error : function(error) {
+	//		console.log("error");
+		}
+		
+	});
+}
+
+</script>
 	  
 <%@include file="../include/template_footer.jsp" %>
