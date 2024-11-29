@@ -75,9 +75,9 @@
 	            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
 	              <h3>캐릭터 정보</h3>
 	              <ul>
-	                <li><strong>캐릭터명</strong>: Web design</li>
-	                <li><strong>레벨</strong>: ASU Company</li>
-	                <li><strong>전투력</strong>: 01 March, 2020</li>
+	                <li><strong>캐릭터명</strong>: &nbsp <span id = "characterName">Web design</span></li>
+	                <li><strong>레벨</strong>: &nbsp <span id = "characterLevel">ASU Company</span></li>
+	                <li><strong>생성일자</strong>: &nbsp <span id = "characterDate">01 March, 2020</span></li>
 	              </ul>
 	            </div>
 	            
@@ -125,8 +125,9 @@
 
 function getCharacter() {
 	var chName = nameForm.chName.value; 
-	console.log(chName);
+// 	console.log(chName);
 
+	var basicInfoMap = null;
 	
 	$.ajax({
 		
@@ -138,13 +139,15 @@ function getCharacter() {
 		
 		success: function(data){
 			
-// 			returnObject = data;
 			console.log("success : " + data);
+// 			console.log(JSON.stringify(data));
+			basicInfoMap = new Map(Object.entries(data));
 			
 		},
 	
 		complete : function(data) {
-			console.log("complete : " + data);
+// 			data = JSON.stringify(data);
+// 			console.log("complete : " + data);
 		},
 		
 		error : function(error) {
@@ -152,6 +155,17 @@ function getCharacter() {
 		}
 		
 	});
+	
+//	basicInfoMap.forEach( (value, key, basicInfoMap) => {
+//	  console.log(key+":"+value);
+//	});
+	
+	var characterName = basicInfoMap.get("character_name");
+	var characterLevel = basicInfoMap.get("character_level");
+	var characterCreateDate = basicInfoMap.get("character_date_create").substr(0,10);
+	$('#characterName').text(characterName);
+	$('#characterLevel').text(characterLevel);
+	$('#characterDate').text(characterCreateDate);
 }
 
 </script>

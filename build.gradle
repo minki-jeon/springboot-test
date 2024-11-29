@@ -28,6 +28,7 @@ dependencies {
     implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api' //스프링부트 3.0 이상
     implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl' //스프링부트 3.0 이상
     developmentOnly 'org.springframework.boot:spring-boot-devtools'	// 서버 재가동없이 소스 반영을 위한 도구
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1' // JSON Parser
 }
 
 tasks.named('test') {
