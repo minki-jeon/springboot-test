@@ -94,7 +94,7 @@
 	          </div>
 	
 	          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-	            <img src="img/services.jpg" alt="" class="img-fluid services-img">
+	            <img src="img/services.jpg" alt="" class="img-fluid services-img" id="characterImg">
 	            <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
 	            <p>
 	              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
@@ -139,8 +139,7 @@ function getCharacter() {
 		
 		success: function(data){
 			
-			console.log("success : " + data);
-// 			console.log(JSON.stringify(data));
+			console.log("success : " + JSON.stringify(data));
 			basicInfoMap = new Map(Object.entries(data));
 			
 		},
@@ -163,9 +162,30 @@ function getCharacter() {
 	var characterName = basicInfoMap.get("character_name");
 	var characterLevel = basicInfoMap.get("character_level");
 	var characterCreateDate = basicInfoMap.get("character_date_create").substr(0,10);
+	var characterImg = basicInfoMap.get("character_image");
+	var imgAction = "A00";	// A00~A07
+	var imgEmotion = "E00";	// E00~E05
+	var imgWmotion = "W00";	// W00~W03
+	var imgWidth = 200;		// 96~1000
+	var imgHeight = 200;	// 96~1000
+	var imgX = 100;			// 0 < x < imgWidth
+	var imgY = 130;			// 0 < y < imgHeight
+	
+	characterImg = characterImg
+				+ "?" + "action=" + imgAction
+				+ "&" + "emotion=" + imgEmotion
+				+ "&" + "wmotion=" + imgWmotion
+				+ "&" + "width=" + imgWidth
+				+ "&" + "height=" + imgHeight
+				+ "&" + "x=" + imgX
+				+ "&" + "y=" + imgY
+				;
+	
 	$('#characterName').text(characterName);
 	$('#characterLevel').text(characterLevel);
 	$('#characterDate').text(characterCreateDate);
+	$('#characterImg').attr("src", characterImg);
+	
 }
 
 </script>
